@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHCommonSDK"
-  s.version      = "2.0.6"
+  s.version      = "2.0.7"
   s.summary      = "YHCommonSDK is only a common sdk"
 
   s.description  = "YHCommonSDK is only a common sdk, we need pod thirdparty:afn"
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.dependency 'YHUtiliitiesSDK' #, '1.0.0'
   s.dependency 'YHEnDecriptionSDK', '~> 2.0.4'
 
-  s.frameworks = "WebKit" //使用框架
+  s.frameworks = "WebKit",'UIKit'
 
   s.vendored_frameworks = ["Framework/*.framework"]
   
