@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHCommonSDK"
-  s.version      = "2.0.0"
+  s.version      = "2.0.1"
   s.summary      = "YHCommonSDK is only a common sdk"
 
   s.description  = "YHCommonSDK is only a common sdk, we need pod thirdparty:afn"
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author       = { "zhengxiaolang" => "haifeng3099@126.com" }
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/XmYlzYhkj/YHCommonSDK.git", :tag => "2.0.0" }
+  s.source       = { :git => "https://github.com/XmYlzYhkj/YHCommonSDK.git", :tag => "2.0.1" }
 
   #s.source_files  = "Classes", "Classes/*"
 
