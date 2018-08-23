@@ -35,6 +35,8 @@ Pod::Spec.new do |s|
   s.dependency 'YHUtiliitiesSDK' #, '1.0.0'
   s.dependency 'YHEnDecriptionSDK', '~> 2.0.4'
 
+  s.frameworks = 'WebKit' //使用框架
+  
   s.vendored_frameworks = ["Framework/*.framework"]
   
   end
