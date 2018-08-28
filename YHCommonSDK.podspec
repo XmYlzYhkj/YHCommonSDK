@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = ["Framework/*.framework"]
 
-  s.resources    = 'Framework/*.framework/Resources/*.bundle'
+  s.resources    = 'Resources/*.bundle'
+
   
   end
