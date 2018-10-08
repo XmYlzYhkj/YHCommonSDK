@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHCommonSDK"
-  s.version      = "1.1.0.12"
+  s.version      = "1.1.0.13"
   s.summary      = "YHCommonSDK is only a common sdk"
 
   s.description  = "YHCommonSDK is only a common sdk, we need pod thirdparty:afn"
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.dependency 'YHNetSDK' #,  '1.0.0'
   s.dependency 'YHCategorySDK' #, '1.0.0'
   s.dependency 'YHAlertSDK' #, '1.0.0'
-  s.dependency 'YHBaseSDK'  , '1.1.3'
+  s.dependency 'YHBaseSDK'  , '~> 1.1.5'
   s.dependency 'YHUtiliitiesSDK' #, '1.0.0'
   s.dependency 'YHEnDecriptionSDK', '~> 2.0.4'
 
