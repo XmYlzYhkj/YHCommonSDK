@@ -52,6 +52,13 @@
 -(void)addDefaultViewOnSuperView:(UIView *)superView withType:(YHDefaultType)type;
 
 /**
+ 在指定界面添加defaultview
+ * 默认错误类型为异常
+ @param message 异常信息
+ */
+-(void)addDefaultViewOnSuperView:(UIView *)superView withMessage:(NSString *)message;
+
+/**
  移除defaultview
  */
 -(void)removeDefaultView;

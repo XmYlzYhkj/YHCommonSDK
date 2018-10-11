@@ -26,4 +26,6 @@ typedef NS_ENUM(NSInteger, YHDefaultType) {
 
 @property(nonatomic,assign)YHDefaultType type;
 
+-(void)setMessage:(NSString *)message;
+
 @end

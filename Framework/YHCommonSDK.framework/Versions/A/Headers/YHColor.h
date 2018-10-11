@@ -64,6 +64,7 @@
 
 #define color333333 [UIColor colorWithHexString:@"#333333"]
 
+#define colorf5f5f5 [UIColor colorWithHexString:@"#f5f5f5"]
 //#define color5087ff [UIColor colorWithHexString:@"#5087ff"] //loginview bgcolor
 
 #define color2760dc [UIColor colorWithHexString:@"#2760dc"]
