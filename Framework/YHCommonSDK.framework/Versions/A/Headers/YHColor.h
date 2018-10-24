@@ -6,6 +6,8 @@
 //  Copyright © 2017年 YH. All rights reserved.
 //
 
+#import "YHCommonConstant.h"
+
 #ifndef YHColor_h
 #define YHColor_h
 
@@ -15,37 +17,37 @@
 //-----颜色规范.start-----//
 
 //主色、主灰色
-#define colorMain           [UIColor colorWithHexString:@"#196ffa"]
-#define colorMainGray       [UIColor colorWithHexString:@"#edf3fe"]
+#define colorMain           [UIColor colorWithHexString:YHColorMainHexString]
+#define colorMainGray       [UIColor colorWithHexString:YHColorMainGrayHexString]
 
 //辅色
-#define colorSecondary1     [UIColor colorWithHexString:@"#20d06a"]
-#define colorSecondary2     [UIColor colorWithHexString:@"#ff7800"]
-#define colorSecondary3     [UIColor colorWithHexString:@"#ef482c"]
+#define colorSecondary1     [UIColor colorWithHexString:YHColorSecondary1HexString]
+#define colorSecondary2     [UIColor colorWithHexString:YHColorSecondary2HexString]
+#define colorSecondary3     [UIColor colorWithHexString:YHColorSecondary3HexString]
 
 //辅灰色
-#define colorSecondaryGray1 [UIColor colorWithHexString:@"#ebfcf2"]
-#define colorSecondaryGray2 [UIColor colorWithHexString:@"#fcf3eb"]
-#define colorSecondaryGray3 [UIColor colorWithHexString:@"#fcedeb"]
+#define colorSecondaryGray1 [UIColor colorWithHexString:YHColorSecondaryGray1HexString]
+#define colorSecondaryGray2 [UIColor colorWithHexString:YHColorSecondaryGray2HexString]
+#define colorSecondaryGray3 [UIColor colorWithHexString:YHColorSecondaryGray3HexString]
 
 //灰色
-#define colorBlack          [UIColor colorWithHexString:@"#000000"]
-#define colorDarkGray       [UIColor colorWithHexString:@"#999999"]
-#define colorGray           [UIColor colorWithHexString:@"#cccccc"]
-#define colorLightGray      [UIColor colorWithHexString:@"#dddddd"]
-#define colorWhiteGray      [UIColor colorWithHexString:@"#eeeeee"]
-#define colorWhite          [UIColor colorWithHexString:@"#ffffff"]
+#define colorBlack          [UIColor colorWithHexString:YHColorBlackHexString]
+#define colorDarkGray       [UIColor colorWithHexString:YHColorDarkGrayHexString]
+#define colorGray           [UIColor colorWithHexString:YHColorGrayHexString]
+#define colorLightGray      [UIColor colorWithHexString:YHColorLightGrayHexString]
+#define colorWhiteGray      [UIColor colorWithHexString:YHColorWhiteGrayHexString]
+#define colorWhite          [UIColor colorWithHexString:YHColorWhiteHexString]
 
 //文字灰色
-#define colorTextBlack      [UIColor colorWithHexString:@"#333333"]
-#define colorTextDarkGray   [UIColor colorWithHexString:@"#666666"]
-#define colorTextGray       [UIColor colorWithHexString:@"#999999"]
-#define colorTextLightGray  [UIColor colorWithHexString:@"#dddddd"]
-#define colorTextWhite      [UIColor colorWithHexString:@"#ffffff"]
+#define colorTextBlack      [UIColor colorWithHexString:YHColorTextBlackHexString]
+#define colorTextDarkGray   [UIColor colorWithHexString:YHColorTextDarkGrayHexString]
+#define colorTextGray       [UIColor colorWithHexString:YHColorTextGrayHexString]
+#define colorTextLightGray  [UIColor colorWithHexString:YHColorTextLightGrayHexString]
+#define colorTextWhite      [UIColor colorWithHexString:YHColorTextWhiteHexString]
 
 //背景色
-#define colorBg             [UIColor colorWithHexString:@"#f5f5f5"]
-#define colorBgWhite        [UIColor colorWithHexString:@"#ffffff"]
+#define colorBg             [UIColor colorWithHexString:YHColorBgHexString]
+#define colorBgWhite        [UIColor colorWithHexString:YHColorBgWhiteHexString]
 
 //-----颜色规范.end-----//
 
