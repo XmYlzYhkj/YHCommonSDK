@@ -57,4 +57,5 @@ FOUNDATION_EXPORT CGFloat const YHCommonCornerRadius;
 
 FOUNDATION_EXPORT CGFloat const YHCommonCellHeight;
 
+FOUNDATION_EXPORT NSString *YHRequestSuccessCode;
 @end

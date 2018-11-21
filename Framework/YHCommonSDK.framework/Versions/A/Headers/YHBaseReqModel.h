@@ -15,13 +15,17 @@
 
 @property(nonatomic,copy)NSString *appId;
 
+@property(nonatomic,copy)NSString *appSecret;
+
 @property(nonatomic,copy)NSString *serviceId;
 
 @property(nonatomic,copy)NSString *deviceId;     //设备
 
-@property(nonatomic,copy)NSString *isEncrypt;   //是否加密加签 (开发阶段为0)
+@property(nonatomic,copy)NSString *isEncrypt;   //是否加密 (开发阶段为0)
 
 @property(nonatomic,copy)NSString *sign;
+
+@property(nonatomic,assign)BOOL isSign;        //是否加签验签 NO
 
 @property(nonatomic,copy)NSString *signType;    //加签方式，默认MD5
 
@@ -44,11 +48,14 @@
 //默认为NO,不使用自定义分页参数，当为YES，需要自定义分页参数
 @property(nonatomic,assign)BOOL isUseCustomPageParam;
 
+@property(nonatomic,strong)NSArray<NSString *> *blackList;
+@property(nonatomic,strong)NSDictionary<NSString *, NSString *> *customPropertyMapper;
+@property(nonatomic,strong)NSDictionary *addDefaultPropertyDic;
+
 /**
  *  返回最终请求参数
  */
 -(NSMutableDictionary *)reqParam;
-
 @end
 
 @interface YHPageParamReqModel : NSObject
@@ -64,8 +71,5 @@
 
 -(void)setNextPage;
 
-//以下2字段只有预交金会用到而已
-@property(nonatomic,copy)NSString *start;
-@property(nonatomic,copy)NSString *count;
 @end
 
