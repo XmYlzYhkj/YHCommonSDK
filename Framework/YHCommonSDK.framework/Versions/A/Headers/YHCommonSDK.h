@@ -3,6 +3,7 @@
 //  YHCommonSDK
 //
 //  Created by zxl on 2018/3/22.
+//  Modify by Jagtu on 2018/11/29.
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -17,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char YHCommonSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <YHCommonSDK/YHCommonSDK.h>
 
 //model
+#import <YHCommonSDK/YHBaseModel.h>
 #import <YHCommonSDK/YHBaseReqModel.h>
 #import <YHCommonSDK/YHBaseRespModel.h>
 

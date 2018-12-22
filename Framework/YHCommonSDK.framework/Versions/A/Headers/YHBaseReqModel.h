@@ -27,9 +27,9 @@
 
 @property(nonatomic,assign)BOOL isSign;        //是否加签验签 NO
 
-@property(nonatomic,copy)NSString *signType;    //加签方式，默认MD5
+@property(nonatomic,copy)NSString *signType;    //加签方式，默认MD5。（目前支持MD5，SM3）
 
-@property(nonatomic,copy)NSString *encryptType; //加密方式，默认AES
+@property(nonatomic,copy)NSString *encryptType; //加密方式，默认AES。（目前支持AES，SM4）
 
 @property(nonatomic,copy)NSString *timestamp;//e.g 20171127051619060
 

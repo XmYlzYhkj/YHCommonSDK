@@ -14,7 +14,9 @@
 
 -(void)createView;
 
--(void)addContraint;
+-(void)addContraint NS_DEPRECATED_IOS(2_0,3_0, "use -addConstraints");
+
+-(void)addConstraints;
 
 +(CGFloat)getCellHeight;
 

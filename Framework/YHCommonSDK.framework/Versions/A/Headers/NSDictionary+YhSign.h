@@ -35,9 +35,7 @@
 -(NSString *)yh_signSortStringWithBlackList:(NSArray<NSString *> *)blackList;
 
 /**
- 对字典数据进行签名
-
- 注：默认会过滤：@"sign", @"encryptData", @"externalMap", @"pageParam"
+ 对字典数据进行MD5签名
  
  @param secret 签名私钥
  @return 签名后数据
@@ -45,32 +43,46 @@
 -(NSString *)yh_signWithMd5WithSecret:(NSString *)secret;
 
 /**
+ 对字典数据进行签名
+
+ 注：默认会过滤：@"sign", @"encryptData", @"externalMap", @"pageParam"
+ 
+ @param secret 签名私钥
+ @param signType 签名类型（MD5/SM3）
+ @return 签名后数据
+ */
+-(NSString *)yh_signWithSecret:(NSString *)secret signType:(NSString *)signType;
+
+/**
 对字典数据进行签名
 
  @param secret 签名私钥
+ @param signType 签名类型（MD5/SM3）
  @param blackList 需要剔除key的集合。
  @return 签名后数据
  */
--(NSString *)yh_signWithMd5WithSecret:(NSString *)secret blackList:(NSArray<NSString *> *)blackList;
+-(NSString *)yh_signWithSecret:(NSString *)secret signType:(NSString *)signType blackList:(NSArray<NSString *> *)blackList;
     
 /**
  对字典验签
  
  @param sign 签名
  @param secret 签名私钥
+ @param signType 签名类型（MD5/SM3）
  @return 是否签名成功
  */
--(BOOL)yh_verifySign:(NSString *)sign secret:(NSString *)secret;
+-(BOOL)yh_verifySign:(NSString *)sign secret:(NSString *)secret signType:(NSString *)signType;
 
 /**
  对字典验签
 
  @param sign 签名
  @param secret 签名私钥
+ @param signType 签名类型（MD5/SM3）
  @param blackList 不参与验签的key
  @return 是否签名成功
  */
--(BOOL)yh_verifySign:(NSString *)sign secret:(NSString *)secret blackList:(NSArray<NSString *> *)blackList;
+-(BOOL)yh_verifySign:(NSString *)sign secret:(NSString *)secret signType:(NSString *)signType blackList:(NSArray<NSString *> *)blackList;
 
 -(NSDictionary *)pullAway:(NSArray *)keys;
 
