@@ -36,7 +36,7 @@
 
 /**
  对字典数据进行MD5签名
- 
+
  @param secret 签名私钥
  @return 签名后数据
  */
