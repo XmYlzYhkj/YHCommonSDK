@@ -38,7 +38,6 @@ FOUNDATION_EXPORT const unsigned char YHCommonSDKVersionString[];
 //view
 #import <YHCommonSDK/YHNetErrorView.h>
 #import <YHCommonSDK/YHBaseCollectionCell.h>
-#import <YHCommonSDK/YHLoadingView.h>
 #import <YHCommonSDK/YHPageControl.h>
 #import <YHCommonSDK/YHScrollView.h>
 #import <YHCommonSDK/YHBaseTableViewCell.h>

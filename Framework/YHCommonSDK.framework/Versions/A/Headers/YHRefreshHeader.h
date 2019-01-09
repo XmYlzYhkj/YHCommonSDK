@@ -6,8 +6,8 @@
 //  Copyright © 2017年 YH. All rights reserved.
 //
 
-#import "YHLoadingView.h"
 
+#import <YHAlertSDK/YHLoadingView.h>
 #import <MJRefresh/MJRefresh.h>
 
 @interface YHRefreshHeader : MJRefreshStateHeader
