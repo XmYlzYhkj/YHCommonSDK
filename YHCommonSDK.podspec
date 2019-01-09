@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.dependency 'OpenUDID',          '~> 1.0'	#1.0.0
   s.dependency 'SAMKeychain',       '~> 1.5'	#1.5.3
   s.dependency 'SDAutoLayout',      '~> 2.2'	#2.2.1
+  s.dependency 'Reachability',      '~> 3.2'    #3.2
 
   s.dependency 'YHNetSDK' ,         '~> 1.0'	#1.0.5
   s.dependency 'YHCategorySDK' ,    '~> 1.0'	#1.0.1
