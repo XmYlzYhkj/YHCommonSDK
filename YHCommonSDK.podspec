@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHCommonSDK"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "YHCommonSDK is only a common sdk"
 
   s.description  = "YHCommonSDK is only a common sdk, we need pod thirdparty:afn"
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency 'YYModel',           '~> 1.0'	#1.0.4
-  s.dependency 'Reachability',      '~> 3.2'	#3.2
-  s.dependency 'AFNetworking',      '~> 3.2'	#3.2.1
+#  s.dependency 'Reachability',      '~> 3.2'	#3.2
+#  s.dependency 'AFNetworking',      '~> 3.2'	#3.2.1
+#  s.dependency 'SVProgressHUD',     '~> 2.2'	#2.2.5
   s.dependency 'MJRefresh',         '~> 3.1'	#3.1.15.7
-  s.dependency 'SVProgressHUD',     '~> 2.2'	#2.2.5
   s.dependency 'OpenUDID',          '~> 1.0'	#1.0.0
   s.dependency 'SAMKeychain',       '~> 1.5'	#1.5.3
   s.dependency 'SDAutoLayout',      '~> 2.2'	#2.2.1
