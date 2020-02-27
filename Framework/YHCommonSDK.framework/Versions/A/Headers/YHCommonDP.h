@@ -15,10 +15,11 @@
 /**
  参数容器
  */
-@property(nonatomic,strong)YHBaseReqModel *reqModel;
+@property(nonatomic,strong,nonnull)YHBaseReqModel * reqModel;
 
 /**
- 初始化参数
+ * 初始化参数
+ * 子类需重写该方法
  */
 -(void)initData;
 
@@ -29,12 +30,19 @@
 
 
 /**
- 黑明单中参数将会从请求参数中过滤掉。
+ 黑名单中参数将会从请求参数中过滤掉。
 
- @return 请求参数黑明单
+ @return 请求参数黑名单
  */
 + (nullable NSArray<NSString *> *)reqPropertyBlacklist;
 
+
+/**
+ 忽略名单中参数将会在签名时从请求参数中过滤掉。
+ 
+ @return 请求参数签名忽略名单
+ */
++ (nullable NSArray<NSString *> *)reqSignIgnorePropertylist;
 
 /**
  默认请求参数映射。
@@ -77,5 +85,21 @@
  @return 新增的请求参数。
  */
 + (nullable NSDictionary *)addDefaultProperty;
+
+/**
+ 加密参数映射。
+ 请求参数中需要进行加密的参数与加密后参数的映射
+ eg: @{@"param":@"encryptData"}，对参数param加密之后赋给encryptData
+@return 加密参数映射。
+*/
++ (nullable NSDictionary<NSString *, NSString *> *)reqCustomEncryptPropertyMapper;
+
+/**
+ 解密参数映射。
+ 解密参数中需要进行加密的参数与加密后参数的映射
+ eg: @{@"param":@"encryptData"}，对参数param加密之后赋给encryptData
+ @return 加密参数映射。
+ */
++ (nullable NSDictionary<NSString *, NSString *> *)reqCustomDecryptPropertyMapper;
 
 @end

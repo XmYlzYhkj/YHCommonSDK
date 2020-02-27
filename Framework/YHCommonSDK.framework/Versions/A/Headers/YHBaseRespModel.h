@@ -18,9 +18,11 @@
 
 @property(nonatomic,copy)NSString *encryptType;//加密算法
 @property(nonatomic,copy)NSString *signType;//签名算法
-@property(nonatomic,copy)NSString *sign;    //签名(服务端的)
-@property(nonatomic,copy)NSString *signClient;    //签名
+@property(nonatomic,copy)NSString *sign;    //签名
 @property(nonatomic,copy)NSString *timestamp;//服务端时间戳
+
+//是否验签成功
+@property(nonatomic,assign)BOOL isCorrectSign;
 
 /**
  * 返回正常数据

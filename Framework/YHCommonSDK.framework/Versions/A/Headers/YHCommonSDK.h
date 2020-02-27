@@ -4,7 +4,7 @@
 //
 //  Created by zxl on 2018/3/22.
 //  Modify by Jagtu on 2018/11/29.
-//  V1.1.1.6
+//  V1.1.7.1  YHCommonDP升级优化：新增请求参数签名忽略名单、加密参数映射、解密参数映射
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -49,11 +49,13 @@ FOUNDATION_EXPORT const unsigned char YHCommonSDKVersionString[];
 
 //pt
 #import <YHCommonSDK/YHBasePresenter.h>
+#import <YHCommonSDK/YHCommonPT.h>
+#import <YHCommonSDK/YHBaseTabelViewPT.h>
 
 //config
+#import <YHCommonSDK/YHColor.h>
+#import <YHCommonSDK/YHCommonConstant.h>
 
 //other
 #import <YHCommonSDK/YHDecryptData.h>
-#import <YHCommonSDK/YHColor.h>
 #import <YHCommonSDK/YHCommonHelper.h>
-#import <YHCommonSDK/YHCommonConstant.h>

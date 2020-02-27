@@ -14,8 +14,15 @@
 
 @property(nonatomic,strong)UIColor *btnBgColor;
 
+@property(nonatomic,strong)UIColor *textDisableColor;
+
+@property(nonatomic,strong)UIColor *btnDisableBgColor;
+
 @property(nonatomic,copy)dispatch_block_t nextBlock;
 
 @property(nonatomic,strong)UIImage *image;
+
+@property(nonatomic,assign)BOOL enable;
+
 
 @end

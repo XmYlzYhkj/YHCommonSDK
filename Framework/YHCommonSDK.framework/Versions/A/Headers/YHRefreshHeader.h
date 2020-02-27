@@ -7,8 +7,9 @@
 //
 
 
-#import <YHAlertSDK/YHLoadingView.h>
+#import <UIKit/UIKit.h>
 #import <MJRefresh/MJRefresh.h>
+@class YHLoadingView;
 
 @interface YHRefreshHeader : MJRefreshStateHeader
 

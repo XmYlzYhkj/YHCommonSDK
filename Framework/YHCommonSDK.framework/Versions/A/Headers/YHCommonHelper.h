@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SAMKeychain.h>
-#import <OpenUDID.h>
 
 @interface YHCommonHelper : NSObject
 

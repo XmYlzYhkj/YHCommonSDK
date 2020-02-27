@@ -22,6 +22,9 @@
 
 @property(nonatomic,assign)CGFloat textFieldRightPadding;
 
+///默认与YHCellRightPadding相等
+@property(nonatomic,assign)CGFloat bottomLineRightPadding;
+
 @property(nonatomic,assign)BOOL hiddenLeftImageView;
 @property(nonatomic,assign)BOOL hiddenBottomLine;
 @property(nonatomic,assign)BOOL hidenTopCorner;

@@ -19,25 +19,29 @@
 
 @property(nonatomic,copy)NSString *serviceId;
 
-@property(nonatomic,copy)NSString *deviceId;     //设备
-
 @property(nonatomic,copy)NSString *isEncrypt;   //是否加密 (开发阶段为0)
 
-@property(nonatomic,copy)NSString *sign;
+@property(nonatomic,copy)NSString *encryptType; //加密方式，默认AES。（目前支持AES，SM4）
 
 @property(nonatomic,assign)BOOL isSign;        //是否加签验签 NO
 
 @property(nonatomic,copy)NSString *signType;    //加签方式，默认MD5。（目前支持MD5，SM3）
 
-@property(nonatomic,copy)NSString *encryptType; //加密方式，默认AES。（目前支持AES，SM4）
+@property(nonatomic,copy)NSString *sign;
 
 @property(nonatomic,copy)NSString *timestamp;//e.g 20171127051619060
 
 @property(nonatomic,copy)NSString *version;
 
-@property(nonatomic,copy)NSString *appVersion;//app's buildVersion
+@property(nonatomic,copy)NSString *reqId;
 
 @property(nonatomic,copy)NSString *sessionId;
+
+@property(nonatomic,copy)NSString *termType;
+
+@property(nonatomic,copy)NSString *deviceId;     //设备
+
+@property(nonatomic,copy)NSString *appVersion;//app's buildVersion
 
 @property(nonatomic,strong)NSMutableDictionary *param;//业务参数
 
@@ -45,17 +49,23 @@
 
 @property(nonatomic,strong)NSMutableDictionary *paramBody;//最外层参数
 
-//默认为NO,不使用自定义分页参数，当为YES，需要自定义分页参数
-@property(nonatomic,assign)BOOL isUseCustomPageParam;
-
-@property(nonatomic,strong)NSArray<NSString *> *blackList;
-@property(nonatomic,strong)NSDictionary<NSString *, NSString *> *customPropertyMapper;
-@property(nonatomic,strong)NSDictionary *addDefaultPropertyDic;
-
 /**
- *  返回最终请求参数
+ *  返回最终请求参数(未加密)
  */
 -(NSMutableDictionary *)reqParam;
+
+/**
+ *  相关配置设置
+ */
+//默认为NO,不使用自定义分页参数，当为YES，需要自定义分页参数
+@property(nonatomic,assign)BOOL isUseCustomPageParam;
+@property(nonatomic,strong)NSDictionary *addDefaultPropertyDic;
+@property(nonatomic,strong)NSArray<NSString *> *reqBlacklist;
+@property(nonatomic,strong)NSArray<NSString *> *signBlackList;
+@property(nonatomic,strong)NSDictionary<NSString *, NSString *> *customPropertyMapper;
+@property(nonatomic,strong)NSDictionary<NSString *, NSString *> *customEncryptPropertyMapper;
+@property(nonatomic,strong)NSDictionary<NSString *, NSString *> *customDecryptPropertyMapper;
+
 @end
 
 @interface YHPageParamReqModel : NSObject

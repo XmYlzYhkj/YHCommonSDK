@@ -7,8 +7,7 @@
 //
 
 #import "YHBaseViewController.h"
-#import <MJRefresh/MJRefresh.h>
-#import "YHRefreshHeader.h"
+
 @interface YHPullRefreshController : YHBaseViewController
 
 
@@ -17,7 +16,7 @@
 
  @return header
  */
--(MJRefreshHeader *)addRefreshHeader;
+-(id)addRefreshHeader;
 
 
 /**
@@ -25,7 +24,7 @@
 
  @return footer
  */
--(MJRefreshFooter *)addLoadMoreFooter;
+-(id)addLoadMoreFooter;
 
 /**
  下拉刷新方法
