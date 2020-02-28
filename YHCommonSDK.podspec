@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'YYModel',           '~> 1.0'	#1.0.4
+  s.dependency 'YHModel',           '~> 1.0'	#1.0.4
   s.dependency 'MJRefresh',         '~> 3.1'	#3.1.15.7
   s.dependency 'OpenUDID',          '~> 1.0'	#1.0.0
   s.dependency 'SAMKeychain',       '~> 1.5'	#1.5.3
