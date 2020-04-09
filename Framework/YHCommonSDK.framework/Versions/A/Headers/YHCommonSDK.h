@@ -5,6 +5,7 @@
 //  Created by zxl on 2018/3/22.
 //  Modify by Jagtu on 2018/11/29.
 //  V1.1.7.1  YHCommonDP升级优化：新增请求参数签名忽略名单、加密参数映射、解密参数映射
+//  V1.1.7.7  删除YHRefreshHeader
 //  Copyright © 2018年 YH. All rights reserved.
 //
 
@@ -41,7 +42,6 @@ FOUNDATION_EXPORT const unsigned char YHCommonSDKVersionString[];
 #import <YHCommonSDK/YHPageControl.h>
 #import <YHCommonSDK/YHScrollView.h>
 #import <YHCommonSDK/YHBaseTableViewCell.h>
-#import <YHCommonSDK/YHRefreshHeader.h>
 #import <YHCommonSDK/YHCornerCell.h>
 #import <YHCommonSDK/YHBottomBtnView.h>
 #import <YHCommonSDK/YHTextFieldView.h>
