@@ -49,6 +49,12 @@ MIT © 厦门市易联众易惠科技有限公司
 2.新增UINavigationController+YHFullScreen
 ```
 
+### V1.1.8
+
+```
+1.更新YYModel->YHModel
+```
+
 ### V1.1.7
 
 更新时间：2019-09-02
