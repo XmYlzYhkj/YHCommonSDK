@@ -1,6 +1,0 @@
-framework module YHCommonSDK {
-  umbrella header "YHCommonSDK.h"
-
-  export *
-  module * { export * }
-}
