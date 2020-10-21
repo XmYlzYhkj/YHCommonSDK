@@ -39,8 +39,6 @@ Pod::Spec.new do |s|
 
   s.default_subspecs = 'Default'
 
-  s.vendored_frameworks = ["Framework/*.framework"]
-
   s.subspec 'Default' do |sp|
     sp.vendored_frameworks = ["Framework/Default/*.framework"]      
     sp.dependency 'YYModel', '~> 1.0'
